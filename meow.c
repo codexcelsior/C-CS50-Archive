@@ -1,16 +1,19 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void)  {
-    int counter = 0;
-    while (counter < 3)
-    {
-        printf("Meow\n");
-        counter++;
-    }
+// If you are stupid to make meow funciton below main func
+// you have to put void meow(void); infront of main func (Also called Prototype)
 
-    for (int i = 0; i < 3; i++) {
-        printf("meow\n"); //i < 3 = instantly check step 
-        // i++ use to add up i 
-    }
+void meow(int n) {
+    for (int i = 0; i < n; i++) {
+        printf("meow\n");
+        //  //i < 3 = instantly check step 
+        // // i++ use to add up i 
+
 }
+}
+
+int main(void)  
+{
+    meow(3);
+    }
