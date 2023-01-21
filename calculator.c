@@ -7,7 +7,7 @@ int main(void) {
     float z = (float) x / (float) y;
     
 
-    // long = long int
+    //long = long int
     //int = integer
 
     printf("%.50f\n", z); //Take 1 input (string )
