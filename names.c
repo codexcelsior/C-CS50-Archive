@@ -9,7 +9,7 @@ int main(void) {
     for (int i = 0; i < 7; i++) {
         if (strcmp(names[i], "Bill") == 0) {
             printf("Found!\n");
-            return 0;
+            return 0; //When return 0 => stops at loop
         }
     }
     printf("Not found!\n");
