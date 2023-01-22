@@ -7,6 +7,6 @@ Some problems you might come up while trying to install cs50 lib:
 Second issue (SOLVED): still cannot execute and solve get_string func?
 -> https://stackoverflow.com/questions/71507578/undefined-reference-to-get-string-compiling-cs50-code
 
-Second issue (UNRESOLVED/ Too lazy to search for a solution):  [debug50: command not found] [UNRESOLVED/ SKIPPED] (If you cannot download it use the Codespace version of CS50)
+Third issue:  [debug50: command not found] [UNRESOLVED/ SKIPPED] (If you cannot download it use the Codespace version of CS50)
 
 NOTE: THIS IS ARCHIVE OF WHAT I LEARNT AND THE PROBLEMS I ENCOUNTERED. IT HAS NOTHING TO DO WITH MY OTHER PROJECTS!
