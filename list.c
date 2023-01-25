@@ -1,32 +1,65 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct node {
+    int number; 
+    struct node *next;
+}
+node;
+
 int main(void) {
-    int list[3];
-    int *list = malloc(3 * sizeof(int));
-    if (list == NULL) {
+    // list of size
+    node *list = NULL;
+
+    node *n = malloc(sizeof(node));
+
+    if (n == NULL) 
+    {
         return 1;
     }
+    n->number = 1;
+    n-> next = 1;
+    //Update list to point to new node
+    list = n;
 
-    list[0] = 1;
-    list[1] = 2;
-    list[2] = 3;
+    //Add a number to list
+    n = malloc(sizeof(node));
+    if (n = NULL) 
+    {
+        free(list);
+        return 0;
+    }
 
-    //Time passes 
-    int *tmp = malloc(4 * sizeof(int));
-    if (tmp == NULL) {
+    n -> number = 2;
+    n -> next = NULL;
+    list -> next = n;
+
+    //Add a number to list
+    n = malloc(sizeof(node));
+    if (n == NULL) 
+    {
+        free(list->next);
         free(list);
         return 1;
     }
 
-    for (int i = 0; i < 3; i++) {
-        tmp[i] = list[i];
-    }
-    list[3] = 4;
+    list->next->next = n;
 
-    for (int i = 0; i< 4; i++ ) {
-        printf("%i", list[i]);
+    //Print numbers
+    for (node *tmp = list; tmp != NULL; tmp = tmp -> next) 
+    {
+        printf("%i\n", tmp -> number);
+    }
+
+    //Free list
+    while (list != NULL)
+    {
+        node *tmp = list->next;
+        free(list);
+        list = tmp;
     }
     return 0;
+    
 
 }
+
