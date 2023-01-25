@@ -1,4 +1,4 @@
-# Intro to my CS50 Computer Science Archive:
+# Intro to my CS50 Computer Science (C language) Archive:
  
  First issue (SOLVED): cs50 lib not installed
 Some problems you might come up while trying to install cs50 lib:
